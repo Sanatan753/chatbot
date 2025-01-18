@@ -80,7 +80,7 @@ body {
 }
 
 .main-content {
-  padding: 20px;
+  padding: 10px;
 }
 
 .introduction, .features, .get-started {
@@ -112,7 +112,7 @@ body {
   display: inline-block;
   padding: 10px 20px;
   font-size: 1rem;
-  color: #121212;
+  color: whitesmoke;
   background: linear-gradient(145deg, #39ff14, #6a0dad);
   border: none;
   border-radius: 8px;
@@ -124,6 +124,7 @@ body {
 
 .start-button:hover {
   transform: scale(1.05);
+  color: white;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.9);
 }
 

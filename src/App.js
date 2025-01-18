@@ -12,6 +12,12 @@ function App() {
             </header>
 
             <main className="main-content">
+                
+                <section className="get-started">
+                    <h2>Get Started</h2>
+                    <button className="start-button">Start Chatting</button>
+                </section>
+
                 <section className="introduction">
                     <h2>About the Chatbot</h2>
                     <p>
@@ -30,10 +36,6 @@ function App() {
                     </ul>
                 </section>
 
-                <section className="get-started">
-                    <h2>Get Started</h2>
-                    <button className="start-button">Start Chatting</button>
-                </section>
             </main>
 
             <footer className="footer">
