@@ -15,7 +15,10 @@ function App() {
                 
                 <section className="get-started">
                     <h2>Get Started</h2>
-                    <button className="start-button">Start Chatting</button>
+                    <a 
+                    className="start-button"
+                    href="CreativeFields.js"
+                    >Start Chatting</a>
                 </section>
 
                 <section className="introduction">
