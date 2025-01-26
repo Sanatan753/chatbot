@@ -51,7 +51,7 @@ body {
 }
 
 .homepage {
-  width: 80%;
+  height: 85%;
   max-width: 1200px;
   background: rgba(0, 0, 0, 0.8);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
@@ -109,6 +109,7 @@ body {
 }
 
 .start-button {
+  text-decoration: none;
   display: inline-block;
   padding: 10px 20px;
   font-size: 1rem;

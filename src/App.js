@@ -15,15 +15,12 @@ function App() {
         </header>
 
         <main className="main-content">
-        <section className="get-started">
-        <h2>Get Started</h2>
-        <button
-          className="start-button"
-          onClick={() => Link("/CreativeFields")}
-        >
-          Start Chatting
-        </button>
-      </section>
+          <section className="get-started">
+            <h2>Get Started</h2>
+            <Link className="start-button" to="/creative-fields">
+              Start Chatting
+            </Link>
+          </section>
 
           <section className="introduction">
             <h2>About the Chatbot</h2>
