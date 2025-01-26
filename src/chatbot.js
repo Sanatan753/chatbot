@@ -24,7 +24,7 @@ function Chatbot() {
 
     // Send user message to the server
     try {
-      const response = await fetch("http://localhost:5000/get-chat-response", {
+      const response = await fetch("https://chatbot-2fug.onrender.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
