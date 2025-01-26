@@ -47,7 +47,7 @@ function CreativeFields() {
       const data = await response.json();
 
       // Redirect to Chatbot page and pass data as state
-      navigate("/chatbot", {
+      navigate("/Chatbot-page", {
         state: { selectedField: field.name, response: data.message },
       });
     } catch (error) {

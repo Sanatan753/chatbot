@@ -49,7 +49,7 @@ function App() {
         {/* React Router setup */}
         <Routes>
           <Route path="/creative-fields" element={<CreativeFields />} />
-          <Route path="/chatbot" element={<Chatbot />} /> {/* Add the Chatbot route */}
+          <Route path="/Chatbot-page" element={<Chatbot />} /> {/* Add the Chatbot route */}
         </Routes>
       </div>
     </Router>
