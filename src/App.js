@@ -1,51 +1,59 @@
 // Importing necessary modules
-import React from 'react';
-import './App.css'; // You can define styles here
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import CreativeFields from "./CreativeFields"; // Ensure the path is correct
+import "./App.css"; // You can define styles here
 
 // Defining the HomePage component
 function App() {
-    return (
-        <div className="homepage">
-            <header className="header">
-                <h1>Welcome to Idea Incubator</h1>
-                <p>Your AI companion for creative brainstorming</p>
-            </header>
+  return (
+    <Router>
+      <div className="homepage">
+        <header className="header">
+          <h1>Welcome to Idea Incubator</h1>
+          <p>Your AI companion for creative brainstorming</p>
+        </header>
 
-            <main className="main-content">
-                
-                <section className="get-started">
-                    <h2>Get Started</h2>
-                    <a 
-                    className="start-button"
-                    href="CreativeFields.js"
-                    >Start Chatting</a>
-                </section>
+        <main className="main-content">
+        <section className="get-started">
+        <h2>Get Started</h2>
+        <button
+          className="start-button"
+          onClick={() => Link("/CreativeFields")}
+        >
+          Start Chatting
+        </button>
+      </section>
 
-                <section className="introduction">
-                    <h2>About the Chatbot</h2>
-                    <p>
-                        Idea Incubator helps creators bring their visions to life. Whether you're a writer,
-                        artist, or musician, our AI can help you brainstorm, refine, and start your
-                        creative projects.
-                    </p>
-                </section>
+          <section className="introduction">
+            <h2>About the Chatbot</h2>
+            <p>
+              Idea Incubator helps creators bring their visions to life. Whether you're a writer,
+              artist, or musician, our AI can help you brainstorm, refine, and start your
+              creative projects.
+            </p>
+          </section>
 
-                <section className="features">
-                    <h2>Features</h2>
-                    <ul>
-                        <li>Generate ideas across multiple domains</li>
-                        <li>Get step-by-step guidance for your projects</li>
-                        <li>Save and revisit your brainstormed ideas</li>
-                    </ul>
-                </section>
+          <section className="features">
+            <h2>Features</h2>
+            <ul>
+              <li>Generate ideas across multiple domains</li>
+              <li>Get step-by-step guidance for your projects</li>
+              <li>Save and revisit your brainstormed ideas</li>
+            </ul>
+          </section>
+        </main>
 
-            </main>
+        <footer className="footer">
+          <p>&copy; 2025 Idea Incubator. All rights reserved.</p>
+        </footer>
 
-            <footer className="footer">
-                <p>&copy; 2025 Idea Incubator. All rights reserved.</p>
-            </footer>
-        </div>
-    );
+        <Routes>
+          <Route path="/creative-fields" element={<CreativeFields />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
 export default App;
