@@ -13,25 +13,36 @@
   }
   
   .field-card {
-    border: 2px solid #007bff;
+    border: 2px solid #4a5969;
     border-radius: 10px;
     padding: 20px;
     cursor: pointer;
-    background-color: #f8f9fa;
+    background-color: rgba(0,0,0,0.75);
+    max-width:370px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     transition: transform 0.3s, background-color 0.3s;
   }
   
   .field-card:hover {
     transform: scale(1.05);
-    background-color: #e7f1ff;
+    background-color: #232323;
+    background-image: cross-fade(25%);
   }
   
   .field-card h2 {
     margin-bottom: 10px;
-    color: #007bff;
+    color: #07414d;
+    text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #edfcff,
+        0 0 30px #f2fdff,
+        0 0 40px #e4faff,
+        0 0 55px #e3faff,
+        0 0 70px #ecfcff;
   }
   
   .field-card p {
     color: #555;
   }
-  

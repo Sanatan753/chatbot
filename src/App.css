@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
@@ -52,7 +55,7 @@ body {
 
 .homepage {
   height: 85%;
-  max-width: 1200px;
+  max-width: 100%;
   background: rgba(0, 0, 0, 0.8);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
   border-radius: 12px;

@@ -2,6 +2,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import CreativeFields from "./CreativeFields"; // Ensure the path is correct
+import Chatbot from "./chatbot"; // Import the Chatbot component
 import "./App.css"; // You can define styles here
 
 // Defining the HomePage component
@@ -45,8 +46,10 @@ function App() {
           <p>&copy; 2025 Idea Incubator. All rights reserved.</p>
         </footer>
 
+        {/* React Router setup */}
         <Routes>
           <Route path="/creative-fields" element={<CreativeFields />} />
+          <Route path="/chatbot" element={<Chatbot />} /> {/* Add the Chatbot route */}
         </Routes>
       </div>
     </Router>
